@@ -20,8 +20,6 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import textprocessing.In;
-
 public class SearchEngine {
 	static Scanner sc = new Scanner(System.in);
 

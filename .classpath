@@ -6,7 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Shravan/windsor/Shravan/sem1/Advanced Computing Concepts/jsoup-1.13.1.jar"/>
-	<classpathentry kind="lib" path="C:/Shravan/windsor/Shravan/sem1/Advanced Computing Concepts/Text Processing/Text Processing"/>
+	<classpathentry kind="lib" path="C:/Users/patel/Documents/GitHub/web-search-engine/required/jsoup-1.13.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
