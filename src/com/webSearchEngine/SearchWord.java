@@ -23,11 +23,10 @@ public class SearchWord {
 			int offset = 0;
 			com.webSearchEngine.BoyerMoore boyerMoore = new com.webSearchEngine.BoyerMoore(word);
 
-			for (int loc = 0; loc <= data.length(); loc += offset + word.length()) {
-				offset = boyerMoore.search(word, data.substring(loc));
-				if ((offset + loc) < data.length()) {
+			for (int location = 0; location <= data.length(); location += offset + word.length()) {
+				offset = boyerMoore.search(word, data.substring(location));
+				if ((offset + location) < data.length()) {
 					counter++;
-//					System.out.println( word + " at position " + (offset + loc)+"in txt file: "+txtFile ); // printing position of word in .txt file
 				}
 			}
 			if (counter != 0) {
@@ -38,7 +37,6 @@ public class SearchWord {
 		}
 
 		// Merge-sort for ranking of the pages
-
 		public static void rankFiles(Hashtable<?, Integer> files, int occur) {
 
 			// Transfer as List and sort it
@@ -77,7 +75,7 @@ public class SearchWord {
 
 		public static void suggestAltWord(String wordToSearch) {
 			String line = " ";
-			String regex = "[a-zA-Z0-9]+";
+			String regex = "[a-z0-9]+";
 
 			// Create a Pattern object
 			Pattern pattern = Pattern.compile(regex);
